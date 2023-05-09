@@ -7,7 +7,7 @@ const cors = require("cors");
 const path = require("path");
 
 app.use(cors({
-  origin: 'https://e-com-frontend-ivory.vercel.app/',
+  origin: 'https://e-com-frontend-ivory.vercel.app',
   credentials: true
 }));
 
