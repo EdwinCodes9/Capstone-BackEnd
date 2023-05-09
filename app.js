@@ -7,14 +7,14 @@ const cors = require("cors");
 const path = require("path");
 
 app.use(cors({
-  origin: 'https://e-com-frontend-ivory.vercel.app/',
+  origin: 'https://e-com-frontend-o8hh31vc8-edwincodes9.vercel.app/',
   credentials: true
 }));
 
 app.use(express.json());
 app.use(cookieParser());
 app.use("/", express.static(path.join(__dirname,"./uploads")));
-app.use("/", (req, res) => {
+app.use("/test", (req, res) => {
   res.send("Hey its Edwin!");
 });
 
